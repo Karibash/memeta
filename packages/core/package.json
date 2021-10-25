@@ -1,0 +1,48 @@
+{
+  "name": "@memeta/core",
+  "version": "0.0.1",
+  "description": "Modular SEO package.",
+  "main": "dist/memeta-core.cjs.js",
+  "module": "dist/memeta-core.esm.js",
+  "unpkg": "dist/memeta-core.umd.min.js",
+  "jsdelivr": "dist/memeta-core.umd.min.js",
+  "umd:main": "dist/memeta-core.umd.min.js",
+  "types": "dist/memeta-core.cjs.d.ts",
+  "browser": {
+    "./dist/memeta-core.cjs.js": "./dist/memeta-core.browser.cjs.js",
+    "./dist/memeta-core.esm.js": "./dist/memeta-core.browser.esm.js"
+  },
+  "files": [
+    "src",
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "typescript",
+    "meta",
+    "seo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karibash/memeta.git"
+  },
+  "author": "Karibash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Karibash/memeta/issues"
+  },
+  "homepage": "https://github.com/Karibash/memeta/tree/main/packages/core",
+  "dependencies": {
+    "@babel/runtime": "^7.15.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "preconstruct": {
+    "umdName": "memeta"
+  }
+}
